@@ -1,33 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
-import CallModal from "./CallModal";
+import CallModal from "./modals/CallModal";
 
 
 const NavLinks = () => {
-  const [activeLink, setActiveLink] = useState('');
+  const [activeLink, setActiveLink] = useState(localStorage.getItem('activeLink') ||'');
 
   const handleClick = (link: string) => {
     setActiveLink(link)
+    localStorage.setItem('activeLink', link);
   }
 
+  useEffect(() => {
+    const storedActiveLink = localStorage.getItem('activeLink');
+    if (storedActiveLink) {
+      setActiveLink(storedActiveLink);
+    }
+  }, []);
+
   return (
-    
     <>
-    
-    
           <NavLink onClick={() => handleClick('/')}  className= {`text-lg font-bold ${activeLink === '/' ? 'text-blue-800' : 'text-black'} cursor-pointer md:mt-7 min-[1104px]:mt-0`} to="/">Обо мне</NavLink>
-          <details className="dropdown">
-              <summary className="m-1 btn-base-100 text-lg font-bold cursor-pointer">Услуги</summary>
-                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                  <li><NavLink className="text-lg font-semibold" to ="/finance" >Имущество</NavLink></li>
-                  <li><a className="text-lg font-semibold">Услуга 2</a></li>
-                  <li><a className="text-lg font-semibold">Услуга 3</a></li>
-                  <li><a className="text-lg font-semibold">Услуга 4</a></li>
-                  <li><a className="text-lg font-semibold"> Услуга 5</a></li>
-                  <li><a className="text-lg font-semibold">Услуга 6</a></li>
-                </ul>
-            </details>
+          <NavLink onClick={() => handleClick('/finance')} className={`m-1 btn-base-100 text-lg font-bold cursor-pointer  ${activeLink === '/finance' ? 'text-blue-800' : 'text-black'}`} to ="/finance" >Услуги</NavLink>
           <NavLink onClick={() => handleClick('/projects')} className={`text-lg font-bold ${activeLink === '/projects' ? 'text-blue-800' : 'text-black'} cursor-pointe md:mt-2 min-[1104px]:mt-0 `} to="/projects">Мои дела</NavLink>
           <NavLink onClick={() => handleClick('/contacts')} className={` text-lg font-bold ${activeLink === '/contacts' ? 'text-blue-800' : 'text-black'} cursor-pointer md:mt-2 min-[1104px]:mt-0`} to="/contacts">Контакты</NavLink>
           <div className="flex flex-col xl:flex-row items-center ">
@@ -35,7 +30,6 @@ const NavLinks = () => {
               <h1 className=" text-blue-900  cursor-pointer min-[1104px]:text-3xl text-3xl md:mt-10 min-[1104px]:mt-0">+7 921 042-47-82</h1>
               <p className=" text-sm  ">пр. Героев Североморцев 39, Мурманск</p>
             </div>
-            
             <CallModal/>
           </div>
     </>

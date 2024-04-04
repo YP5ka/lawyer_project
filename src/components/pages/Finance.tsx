@@ -1,4 +1,4 @@
-import RequestModal from "../RequestModal"
+import RequestModal from "../modals/RequestModal"
 
 const Finance = () => {
   return (
@@ -18,7 +18,7 @@ const Finance = () => {
                 <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit;</p>
                 <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit -</p>
                 <br/>
-                <p className="text-blue-900 font-semibold">Вы можете обратиться к нам за консультацией и решением вопроса.</p>
+                <p className="text-blue-900 font-semibold">Вы можете обратиться ко мне за консультацией и решением вопроса.</p>
                 <br/>
                 <h3 className='text-2xl font-bold'>При этом мы не занимаемся:</h3>
                 <br/>

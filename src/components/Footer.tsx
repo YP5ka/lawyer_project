@@ -1,6 +1,13 @@
 import Logo from "./Logo";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+    };
+    
     return(
         <footer>
              <div  className=" flex-col  bg-[url('/images/bg_bot.jpg')] min-[640px]:h-[30rem] xl:h-[35rem] h-[40rem] w-full bg-no-repeat bg-cover bg-bottom mt-10 flex items-center" >
@@ -18,7 +25,7 @@ const Footer = () => {
              </div>
 
              <div className="flex min-[600px]:flex-row flex-col items-center justify-around  mt-6 mb-4 ">
-                <div className="mr-10 flex items-center  cursor-pointer">
+                <div className="mr-10 flex items-center  cursor-pointer" onClick={scrollToTop}>
                     <Logo />
                     <h1 className="ml-2 text-2xl text-blue-900 font-bold ">Праvовая zащита</h1>
                 </div>

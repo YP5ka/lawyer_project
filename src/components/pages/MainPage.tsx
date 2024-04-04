@@ -1,4 +1,4 @@
-import RequestModal from "../RequestModal";
+import RequestModal from "../modals/RequestModal";
 
 const MainPage = () => {
     return(
@@ -15,15 +15,13 @@ const MainPage = () => {
         <div className="flex flex-col items-center">
             <div className='flex flex-col items-start mt-8 px-3'>
                 <h1 className='text-4xl font-semibold mb-8  '>Обо мне</h1>
-                <p className='max-w-4xl mb-8 text-xl '>Patrial.ru - это сайт юристов-единомышленников, которые постоянно находятся в г. Люберцы Московской области. За деньги мы предоставляем своим клиентам помощь в урегулировании различных вопросов, 
-                    будь то подготовка документов, защита в судах или работа с органами охраны правопорядка, etc.
+                <p className='max-w-4xl mb-8 text-xl '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique asperiores
                 </p>
-                <p className='max-w-4xl mb-10 text-xl'>Целевая аудитория сайта и нашей организации - это простые граждане, для которых суд по взысканию долгов, 
-                    покупка квартиры или развод являются непонятными либо неприятными процессами. Впрочем, как показывает опыт, мы в принципе можем помочь
-                    с большинством вопросов, которые возникают в повседневной жизни. Звоните.</p>
-                <h3 className='max-w-4xl mb-10 text-xl font-medium flex '>То, что для вас - стресс, для нас - поле профессиональной деятельности.</h3>
-                <p className='max-w-4xl text-xl'>Раздел "Нестандарт" предназначен для иных лиц и содержит в себе предложения услуг по банкротству юридических лиц (при максимальном учете интересов клиента), адвокатской защите при тяжких преступлениях экономической направленности, работе частного детектива и иным вопросам, требующим нестандартных методов решения,
-                    с максимальной безопасностью для обратившегося. Анонимность гарантируется.</p>
+                <p className='max-w-4xl mb-10 text-xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, adipisci ex reprehenderit dicta tempora animi, odio porro magnam fugit repellat cumque unde sint ipsa distinctio itaque quam eos error dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore 
+                doloremque eaque corporis in assumenda at maiores? Mollitia, exercitationem nam itaque odio aut libero nihil? Veritatis, ipsum. Nulla, ipsa cupiditate. Eum.</p>
+                <h3 className='max-w-4xl mb-10 text-xl font-medium flex '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam.</h3>
+                <p className='max-w-4xl text-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit velit, 
+                nobis incidunt consequuntur iste illo esse natus error hic? Saepe, labore. Aliquid culpa molestias asperiores aperiam natus, sapiente fuga cum.</p>
             </div>
         </div>
 
