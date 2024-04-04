@@ -4,8 +4,6 @@ const MainPage = () => {
     return(
         <>
         
-           
-
         <div className="flex flex-col items-center mt-32 px-6">
             <h1 className="sm:text-5xl text-3xl font-semibold  text-center">Мои юридические услуги</h1>
                 <div className="flex min-[1240px]:flex-row mt-20 flex-col">
