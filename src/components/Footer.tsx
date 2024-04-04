@@ -3,7 +3,7 @@ import Logo from "./Logo";
 const Footer = () => {
     return(
         <footer>
-             <div  className=" flex-col  bg-[url('../../public/images/bg_bot.jpg')] min-[640px]:h-[30rem] xl:h-[35rem] h-[40rem] w-full bg-no-repeat bg-cover bg-bottom mt-10 flex items-center" >
+             <div  className=" flex-col  bg-[url('/images/bg_bot.jpg')] min-[640px]:h-[30rem] xl:h-[35rem] h-[40rem] w-full bg-no-repeat bg-cover bg-bottom mt-10 flex items-center" >
                 <div className="flex flex-col items-center min-[1010px]:mt-28 mt-10">
                     <div className="flex flex-col text-center">
                         <h1 className="text-white min-[1010px]:text-5xl text-4xl mb-10 font-semibold flex">Запишитесь на консультацию сейчас!</h1>

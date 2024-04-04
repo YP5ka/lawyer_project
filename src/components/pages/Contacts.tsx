@@ -1,5 +1,5 @@
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
-
+import RequestModal from '../RequestModal';
 const Contacts = () => {
   return (
     <div className='flex md:flex-row flex-col items-center justify-center w-full' >
@@ -11,7 +11,10 @@ const Contacts = () => {
             <h3 className='text-2xl text-blue-900 '>info@murmansk.ru</h3>
             <p className='text-lg  mt-10 '>Офис работает с понедельника по пятницу, с 10:00 до 19:00.</p>
             <p className='text-lg  mt-2 '> В целях удобства просьба согласовывать свой приезд заранее.</p>
-            <button className=" bg-blue-900 hover:bg-blue-500 text-white font-bold border border-blue-500 rounded-2xl cursor-pointer min-[1104px]:h-14 h-10 mb-6 mt-6 min-[1104px]:mb-0 min-[1104px]:mt-3 min-[1280px]:mt-10 w-56">Начать сотрудничество</button>
+            
+            <div className='mt-6'>
+              <RequestModal />
+            </div>
         </div>
       </div> 
         <div className='flex items-center mt-10'>
