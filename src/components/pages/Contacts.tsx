@@ -3,7 +3,7 @@ import RequestModal from '../modals/RequestModal';
 const Contacts = () => {
   return (
     <div className='flex md:flex-row flex-col items-center justify-center w-full' >
-      <div className=' pt-9 px-9 '>
+      <div className=' pt-9 px-6 '>
         <div className='flex flex-col items-start  xl:mr-24'>
             <h1 className=' text-4xl font-semibold text-blue-900 '>Свяжитесь со мной</h1>
             <h3 className='text-2xl  mt-10 '>пр. Героев Североморцев 39, Мурманск.</h3>
